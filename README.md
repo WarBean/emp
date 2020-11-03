@@ -40,7 +40,7 @@ def multiply(x):
     return x * 2
 
 results = list(multiply(range(100)))
-assert results == [x * 3 for x in range(100)]
+assert results == [x * 2 for x in range(100)]
 ```
 
 ##### 2.Execute a callable object in parallel with Python 's native multiprocessing package as backend.
