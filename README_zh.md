@@ -40,7 +40,7 @@ def multiply(x):
     return x * 2
 
 results = list(multiply(range(100)))
-assert results == [x * 3 for x in range(100]
+assert results == [x * 3 for x in range(100)]
 ```
 
 ##### 2.用Python原生的`multiprocessing`模块作为后端，并行执行一个callable object。
@@ -56,8 +56,8 @@ class Multiply:
         return x * self.mul
 
 multiply = Multiply(2)
-results = list(f(range(100)))
-assert results == [x * 2 for x in range(100]
+results = list(multiply(range(100)))
+assert results == [x * 2 for x in range(100)]
 ```
 
 ##### 3.换成用分布式计算框架[`Ray`](https://github.com/ray-project/ray)作为后端。
